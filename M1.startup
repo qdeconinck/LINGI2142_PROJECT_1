@@ -1,0 +1,8 @@
+ifconfig eth0 up
+ifconfig eth0 add 2001:db8:be:2131::21/48
+
+ifconfig eth1 up
+ifconfig eth1 add 2001:db8:be:2132::21/48
+
+ifconfig eth2 up
+ifconfig eth2 add 2001:db8:be:1121::21/48
