@@ -4,9 +4,12 @@ ifconfig eth0 up
 ifconfig eth0 add 2001:db8:1112::12/64
 
 ifconfig eth1 up
-ifconfig eth1 add 2001:db8:1223::12/64
+ifconfig eth1 add 2001:db8:1122::11/64
 
 ifconfig eth2 up
-ifconfig eth2 add 2001:db8:1213::12/64
+ifconfig eth2 add 2001:db8:1123::11/64
+
+ifconfig eth3 up
+ifconfig eth3 add 2001:db8:1112::11/64
 
 sysctl -w net.ipv6.conf.all.forwarding=1

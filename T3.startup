@@ -1,0 +1,9 @@
+# enable interface eth0
+ifconfig eth0 up
+# add one IPv6 address on this interface
+ifconfig eth0 add 2001:db8:1213::13/64
+
+ifconfig eth1 up
+ifconfig eth1 add 2001:db8:1324::13/64
+
+sysctl -w net.ipv6.conf.all.forwarding=1
