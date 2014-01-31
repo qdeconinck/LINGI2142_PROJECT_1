@@ -11,3 +11,8 @@ ifconfig eth2 add 2001:db8:2334::23/64
 
 ifconfig eth3 up
 ifconfig eth3 add 2001:db8:1223::23/64
+
+ifconfig eth4 up
+ifconfig eth4 add 2001:db8:1123::23/64
+
+/etc/init.d/quagga start
