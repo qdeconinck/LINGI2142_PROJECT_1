@@ -1,4 +1,6 @@
-sysctl -w net.ipv6.conf.all.forwarding=1
+# enable interface lo
+ifconfig lo up
+ifconfig lo add 2001:db8::23/64
 
 ifconfig eth0 up
 ifconfig eth0 add 2001:db8:2331::23/64
@@ -15,4 +17,5 @@ ifconfig eth3 add 2001:db8:1223::23/64
 ifconfig eth4 up
 ifconfig eth4 add 2001:db8:1123::23/64
 
+sysctl -w net.ipv6.conf.all.forwarding=1
 /etc/init.d/quagga start

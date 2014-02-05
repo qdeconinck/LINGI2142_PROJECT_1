@@ -1,3 +1,7 @@
+# enable interface lo
+ifconfig lo up
+ifconfig lo add 2001:db8::12/64
+
 # enable interface eth0
 ifconfig eth0 up
 # add one IPv6 address on this interface
