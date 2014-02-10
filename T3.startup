@@ -1,6 +1,6 @@
 # enable interface lo
 ifconfig lo up
-ifconfig lo add 2001:db8::13/64
+ifconfig lo add 2001:db8::13/128
 
 # enable interface eth0
 ifconfig eth0 up
