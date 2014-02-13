@@ -1,0 +1,11 @@
+# enable interface lo
+ifconfig lo up
+ifconfig lo add 2001:db7::99/128
+
+# enable interface eth0
+ifconfig eth0 up
+# add one IPv6 address on this interface
+ifconfig eth0 add 2001:db8:9911::99/64
+
+sysctl -w net.ipv6.conf.all.forwarding=1
+/etc/init.d/quagga start
