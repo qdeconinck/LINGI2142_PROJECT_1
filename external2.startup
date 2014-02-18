@@ -1,6 +1,6 @@
 # enable interface lo
 ifconfig lo up
-ifconfig lo add 2001:db7::99/128
+ifconfig lo add 2001:db2::99/128
 
 # enable interface eth0
 ifconfig eth0 up
