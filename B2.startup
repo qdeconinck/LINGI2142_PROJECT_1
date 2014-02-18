@@ -8,6 +8,9 @@ ifconfig eth0 add 2001:db8:2232::32/64
 ifconfig eth1 up
 ifconfig eth1 add 2001:db8:2132::32/64
 
+ifconfig eth2 up
+ifconfig eth2 add 2001:db8:9932::32/64
+
 sysctl -w net.ipv6.conf.all.forwarding=1
 
 /etc/init.d/quagga start
