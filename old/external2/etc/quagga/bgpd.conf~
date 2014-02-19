@@ -1,0 +1,30 @@
+!
+hostname bgpd
+password zebra
+!
+router bgp 2
+ bgp router-id 2.2.2.99
+ 
+ ! eBGP
+ neighbor 2001:db8:9911::11 remote-as 1
+ no neighbor 2001:db8:9911::11 activate
+ neighbor 2001:db8:9911::11 next-hop-self
+ neighbor 2001:db8:9911::11 update-source lo
+ 
+! 
+address-family ipv6
+!
+ network 2001:db2::/32
+ neighbor 2001:db8:9911::11 activate
+exit-address-family
+
+
+!
+!debug bgp
+!debug bgp events
+!debug bgp filters
+!debug bgp fsm
+!debug bgp keepalives
+!debug bgp updates 
+!
+
