@@ -1,3 +1,8 @@
+# enable interface lo
+ifconfig lo up
+#ifconfig lo add 10.21.0.0 netmask 255.255.255.0
+ifconfig lo  10.21.0.0 netmask 255.255.255.0
+
 ifconfig eth0 up
 #ifconfig eth0 add 2001:db8:b1c1::c1/48
 ifconfig eth0 10.0.1.5 netmask 255.255.255.0
